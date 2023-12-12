@@ -1,0 +1,31 @@
+{
+  "name": "@cuiguojie/eslint-config-nuxt3",
+  "private": false,
+  "version": "0.0.1",
+  "description": "ESLint config for nuxt3",
+  "main": "index.js",
+  "author": "cuiguojie@me.com",
+  "keywords": [
+    "eslint-config"
+  ],
+  "peerDependencies": {
+    "eslint": "^8.55.0"
+  },
+  "dependencies": {
+    "@vue/eslint-config-typescript": "^12.0.0",
+    "@nuxtjs/eslint-config-typescript": "^12.1.0",
+    "eslint-plugin-vue": "^9.19.2"
+  },
+  "devDependencies": {
+    "eslint": "^8.55.0"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cuiguojie/f2e-spec"
+  },
+  "homepage": "https://github.com/cuiguojie/f2e-spec/packages/eslint-config-nuxt3",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cuiguojie/f2e-spec.git"
+  }
+}

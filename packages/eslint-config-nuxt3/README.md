@@ -1,18 +1,17 @@
-# eslint-config-vue3
+# eslint-config-nuxt3
 
-源生 vue3 + typescript 项目的 通用 eslint-config 配置。
+Nuxt3 + TypeScript 项目的 通用 eslint-config 配置。
 
 ## 功能说明
 
-* 集成了官方脚手架自带的 ESLint 配置项，及依赖包
-* 修改官方校验规则等级（`essential` 改为 `recommended`）
+* 集成了官方的 ESLint 配置项，及依赖包
 * 添加团队常用的自定义规则覆写
 
 ## 使用：
 
 安装：
 ```
-pnpm i @cuiguojie/eslint-config-vue3 -D
+pnpm i @cuiguojie/eslint-config-nuxt3 -D
 ```
 
 配置 `.eslintrc.cjs` （或者其他格式的 eslintrc 文件）：
@@ -21,16 +20,10 @@ pnpm i @cuiguojie/eslint-config-vue3 -D
 /* eslint-env node */
 module.exports = {
   'extends': [
-    '@cuiguojie/eslint-config-vue3'
+    '@cuiguiojie/eslint-config-nuxt3'
   ]
 };
 ```
-
-> 如果是从 `create-vue` 创建的项目，需要清理已经封装过的脚手架自带的依赖
-```
-pnpm uninstall @rushstack/eslint-patch @vue/eslint-config-typescript eslint-plugin-vue
-```
-
 > 如果项目 packages.json 中已经有低版本的 eslint，需要按照 peer 提示的说明升级或者重新安装
 
 ## 其他
