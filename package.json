@@ -1,5 +1,5 @@
 {
-  "name": "@seemusic/f2e-spec",
+  "name": "@cuiguojie/f2e-spec",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -7,18 +7,13 @@
     "prepare": "husky install"
   },
   "engines": {
-    "node": ">=16.16.0"
+    "node": ">=18.16.1"
   },
   "devDependencies": {
-    "@commitlint/cli": "^17.6.5",
-    "@commitlint/config-conventional": "^17.6.5",
+    "@commitlint/cli": "^18.4.3",
+    "@commitlint/config-conventional": "^18.4.3",
     "commitizen": "^4.3.0",
     "cz-conventional-changelog": "^3.3.0",
     "husky": "^8.0.3"
-  },
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
-    }
   }
 }
