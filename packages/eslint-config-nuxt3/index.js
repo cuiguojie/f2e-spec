@@ -23,7 +23,7 @@ module.exports = {
   // Vue recommends using PascalCase for component names, while Nuxt's automatic routing mechanism requires lowercase file names for files under the "pages" and "layouts" directories.
   overrides: [
     {
-      files: ['layouts/*.vue', 'pages/**/*.vue'],
+      files: ['**/layouts/*.vue', '**/pages/**/*.vue'],
       rules: {
         'vue/multi-word-component-names': 'off'
       }
