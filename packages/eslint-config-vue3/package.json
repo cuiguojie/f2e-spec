@@ -2,7 +2,7 @@
   "name": "@cuiguojie/eslint-config-vue3",
   "type": "module",
   "private": false,
-  "version": "1.0.0-beta.3",
+  "version": "1.0.0",
   "description": "ESLint config for vue3",
   "main": "index.js",
   "author": "cuiguojie@me.com",
