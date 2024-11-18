@@ -41,6 +41,7 @@ pnpm uninstall @rushstack/eslint-patch @vue/eslint-config-typescript eslint-plug
 > 如果项目 packages.json 中已经有低版本的 eslint，需要按照 peer 提示的说明升级或者重新安装
 
 ### 1.0.0 及后续版本（eslint 9）
+
 配置 `.eslint.config.js` （或者其他格式的 eslint 配置 文件）：
 
 > 注意：ESLint 9 放弃了所有 `eslintrc` 格式的配置，统一使用 `config` 格式，如 `eslint.config.js` 或 `eslint.config.mjs`
@@ -51,6 +52,12 @@ import config from '@cuiguojie/eslint-config-vue3';
 export default [
   ...config
 ];
+```
+
+> 如果是从 `create-vue` 创建的项目，需要清理脚手架自带的依赖
+
+```
+pnpm uninstall @vue/eslint-config-typescript eslint-plugin-vue
 ```
 
 ## 其他

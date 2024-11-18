@@ -1,13 +1,17 @@
 {
   "name": "@cuiguojie/eslint-config-vue3",
+  "type": "module",
   "private": false,
-  "version": "1.0.0-beta.1",
+  "version": "1.0.0-beta.2",
   "description": "ESLint config for vue3",
   "main": "index.js",
   "author": "cuiguojie@me.com",
   "keywords": [
     "eslint-config"
   ],
+  "exports": {
+    ".": "./index.js"
+  },
   "peerDependencies": {
     "eslint": "^9.15.0"
   },
