@@ -41,6 +41,7 @@ pnpm uninstall @rushstack/eslint-patch @vue/eslint-config-typescript eslint-plug
 > 如果项目 packages.json 中已经有低版本的 eslint，需要按照 peer 提示的说明升级或者重新安装
 
 ### 1.0.0 及后续版本（eslint 9）
+
 配置 `.eslint.config.js` （或者其他格式的 eslint 配置 文件）：
 
 > 注意：ESLint 9 放弃了所有 `eslintrc` 格式的配置，统一使用 `config` 格式，如 `eslint.config.js` 或 `eslint.config.mjs`
@@ -53,6 +54,12 @@ export default [
 ];
 ```
 
+> 如果是从 `create-vue` 创建的项目，需要清理脚手架自带的依赖
+
+```
+pnpm uninstall @vue/eslint-config-typescript eslint-plugin-vue
+```
+
 ## 其他
 eslint 的多个 extends 配置存在 **覆盖及合并** 操作，如果需要查看最终结果，在调用方项目中，执行以下命令可以把最终结果保存到指定的文件查看：
 
@@ -62,3 +69,5 @@ pnpm eslint --print-config .eslintrc.cjs > eslint-config-log.json
 
 > 命令中，`.eslintrc.cjs` 是项目中 eslintrc 文件名，`eslint-config-log.json` 是输出的文件名
 
+## 问题
+当前（2024-11-18），ESLint 版本 `9.15.0` 存在一些问题，导致项目方无法正常使用，所以暂时锁定版本为 `9.14.0`，后续会跟进更新。Issue 参见：[typescript-eslint/typescript-eslint#10338](https://github.com/typescript-eslint/typescript-eslint/issues/10338)
